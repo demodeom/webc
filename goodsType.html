@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 375px;
+            height: 1000px;
+            /*background-color: red;*/
+            margin: 0 auto;
+        }
+        .head{
+            height: 40px;
+            /*background-color: red;*/
+
+            position: relative;
+        }
+        .head h2{
+            height: 40px;
+            /*background-color: blue;*/
+            /* 文本居中*/
+            font-size: 18px;
+            text-align: center;
+            color: rgba(255, 108, 114, 1);
+            line-height: 40px;
+        }
+        .head .search{
+            width: 38px;
+            height: 38px;
+            /*border: 1px solid blue;*/
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            right: 17px;
+            top:1px;
+
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0px 3px 6px  rgba(115, 6, 6, 0.2),inset -1px -1px 0px  rgba(255, 255, 255, 1),inset 1px 1px 0px  rgba(255, 255, 255, 1);
+            backdrop-filter: blur(10px);
+        }
+        .label{
+            height: 38px;
+            /*background-color: yellow;*/
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            align-items: center;
+        }
+
+        .label .item{
+            width: 80px;
+            /*border: 1px solid black;*/
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            cursor: pointer;
+        }
+
+        .label .item span{
+            font-size: 16px;
+            font-weight: 500;
+            color: rgba(51, 51, 51, 1);
+            padding-bottom: 4px;
+        }
+
+        .label .item .active{
+            border-bottom: 2px solid rgba(255, 108, 114, 1);
+        }
+        .content{
+            /*height: 800px;*/
+            /*background-color: purple;*/
+
+            display: flex;
+            flex-direction: row;
+        }
+        .content .menu{
+            width: 150px;
+            height: 600px;
+
+        }
+
+        .content .menu .item{
+            height: 46px;
+            width: 150px;
+            /*background-color: pink;*/
+            /*border: 1px solid black;*/
+            text-align: center;
+            line-height: 46px;
+            background-color: rgba(255, 224, 225, 1);
+
+            font-size: 16px;
+            font-weight: 400;
+            color:rgba(102, 102, 102, 1);
+        }
+
+        .content .menu .radius-rt{
+            border-radius: 0 20px 0 0;
+            /*border: 1px solid white;*/
+        }
+
+        .content .menu .radius-rb{
+            border-radius: 0 0 20px 0;
+            /*border: 1px solid white;*/
+        }
+
+
+        .content .menu .active{
+            background-color: white;
+            border-left: 3px solid rgba(255, 108, 114, 1);
+            color: rgba(255, 108, 114, 1);
+        }
+
+        .content .goods{
+            width: 225px;
+            height: 600px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h2>筛选列表</h2>
+            <div class="search">
+                <img src="./img/search.png" alt="">
+            </div>
+        </div>
+        <div class="label">
+            <div class="item">
+                <span class="active">分类</span>
+            </div>
+            <div class="item">
+                <span>品牌</span>
+            </div>
+            <div class="item">
+                <span>最热</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="menu">
+                <div class="item radius-rb"></div>
+                <div class="item active">精选</div>
+                <div class="item radius-rt">精选</div>
+                <div class="item">精选</div>
+                <div class="item">精选</div>
+                <div class="item">精选</div>
+                <div class="item">精选</div>
+                <div class="item">精选</div>
+                <div class="item">精选</div>
+                <div class="item">精选</div>
+                <div class="item">精选</div>
+                <div class="item">精选</div>
+            </div>
+            <div class="goods"></div>
+        </div>
+    </div>
+</body>
+</html>

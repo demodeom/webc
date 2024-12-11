@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    html, body{
+      height: 100%;
+    }
+    .container{
+      width: 375px;
+      height: 100%;
+      background-color: rgba(245, 245, 245, 1);
+      margin: 0 auto;
+
+      position: relative;
+    }
+    .header{
+      width: 375px;
+      height: 317px;
+      background: greenyellow;
+
+      margin-bottom: 82px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header .user-header{
+      width: 68px;
+      height: 68px;
+      margin-top: 10px;
+    }
+
+    .header .title{
+      padding: 8px 0;
+      font-size: 18px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 1);
+    }
+
+    .header .signature{
+      margin-top: 37px;
+    }
+
+    .content{
+
+    }
+    
+    .content .item{
+      width: 335px;
+      height: 68px;
+      background: rgba(255, 255, 255, 1);
+      margin: 0 auto 12px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px  rgba(92, 92, 92, 0.1);
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+
+
+    .content .item-head{
+      width: 66px;
+      /*border: 1px solid red;*/
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .content .item-content{
+      width: 224px;
+      color: rgba(255, 108, 114, 1);
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .content .item-footer{
+      width: 45px;
+      /*border: 1px solid blue;*/
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .footer{
+      width: 375px;
+      height: 104px;
+      /*background-color: red;*/
+      /*固定定位*/
+      position: fixed;
+      bottom: 0;
+      left: 0;
+
+      background-image: url("./img/navBg.png");
+      background-position: -30px 27px;
+      background-repeat: no-repeat;
+      /*background-size: 412px 77px;*/
+    }
+    .nav{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: end;
+    }
+
+    .nav .item{
+      width: 52px;
+      height: 52px;
+      /*border: 1px solid blue;*/
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .nav .item img{
+      width: 22px;
+      height: 22px;
+    }
+
+    .color-white{
+      color: rgba(255,255,255,1);
+    }
+
+    .color-gray{
+      color: rgba(255,255,255,0.6);
+    }
+
+    .footer .goodsCar{
+      position: relative;
+      /*background-color: red;*/
+      top: -30px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+
+      background-image: url("./img/goodsCarBg.png");
+      background-size: 60px 60px;
+
+
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="title">我的页面</span>
+      <img class="user-header" src="./img/userHeader.png" alt="">
+      <div class="signature"><span>点击编辑个人签名</span><img src="" alt=""></div>
+    </div>
+    <div class="content">
+
+      <div class="item">
+        <div class="item-head"><img src="./img/service.png" alt=""></div>
+        <p class="item-content">在线客服</p>
+        <div class="item-footer"><img src="./img/arrowRight.png" alt=""></div>
+      </div>
+
+      <div class="item">
+        <div class="item-head"><img src="./img/service.png" alt=""></div>
+        <p class="item-content">在线客服</p>
+        <div class="item-footer"><img src="./img/arrowRight.png" alt=""></div>
+      </div>
+
+      <div class="item">
+        <div class="item-head"><img src="./img/service.png" alt=""></div>
+        <p class="item-content">在线客服</p>
+        <div class="item-footer"><img src="./img/arrowRight.png" alt=""></div>
+      </div>
+
+      <div class="item">
+        <div class="item-head"><img src="./img/service.png" alt=""></div>
+        <p class="item-content">在线客服</p>
+        <div class="item-footer"><img src="./img/arrowRight.png" alt=""></div>
+      </div>
+      <div class="item">
+        <div class="item-head"><img src="./img/service.png" alt=""></div>
+        <p class="item-content">在线客服</p>
+        <div class="item-footer"><img src="./img/arrowRight.png" alt=""></div>
+      </div>
+      <div class="item">
+        <div class="item-head"><img src="./img/service.png" alt=""></div>
+        <p class="item-content">在线客服</p>
+        <div class="item-footer"><img src="./img/arrowRight.png" alt=""></div>
+      </div>
+    </div>
+    <div style="height: 104px"></div>
+    <div class="footer nav">
+      <div class="item color-white">
+        <img src="./img/navType.svg" alt="">
+        <span>首页</span>
+      </div>
+      <div class="item color-gray">
+        <img src="./img/navType.svg" alt="">
+        <span>首页</span>
+      </div>
+      <div class="item goodsCar">
+        <img src="./img/navType.svg" alt="">
+        <!-- <span>首页</span> -->
+      </div>
+      <div class="item">
+        <img src="./img/navType.svg" alt="">
+        <span>首页</span>
+      </div>
+      <div class="item">
+        <img src="./img/navType.svg" alt="">
+        <span>首页</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
